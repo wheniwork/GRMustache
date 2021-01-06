@@ -15,7 +15,20 @@ let package = Package(
         .target(
             name: "GRMustache",
             dependencies: [],
-            path: "src/classes"
+            path: "src/classes",
+			cSettings: [
+				.headerSearchPath("."),
+				.headerSearchPath("Compiling"),
+				.headerSearchPath("Compiling/Expressions"),
+				.headerSearchPath("Compiling/TemplateAST"),
+				.headerSearchPath("Configuration"),
+				.headerSearchPath("Parsing"),
+				.headerSearchPath("Rendering"),
+				.headerSearchPath("Services"),
+				.headerSearchPath("Services/StandardLibrary"),
+				.headerSearchPath("Shared"),
+				.headerSearchPath("Templates")
+			]
         )
     ]
 )
